@@ -5,12 +5,12 @@ My Impact Tracker is a Power Platform solution for recording customer and intern
 The solution includes:
 
 - A model-driven app for Customers, Contracts, and Impacts.
-- **My Impact Coach**, a Copilot Studio agent that can create, review, search, and summarize Impact records.
+- **My Impact Coach**, a Copilot Studio agent created by **Lou Rainaldi** that can create, review, search, and summarize Impact records.
 - A native **Capture Impact Record** business skill and fast agent path that create a complete draft from Customer, Contract, Impact Work Type, and short notes.
 - AI Builder prompts for work-statement extraction and 1:1 summary generation.
 - A daily cloud flow that deactivates Contracts after their End Date.
 
-The checked-in snapshot is the unmanaged `MyImpactTracker` solution, version `1.0.0.4`, exported from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
+The checked-in snapshot is the unmanaged `MyImpactTracker` solution, version `1.0.0.5`, deployed to the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
 
 ## How to use the solution
 
@@ -147,6 +147,14 @@ The unpacked solution includes:
 PAC does not split every modern component into a dedicated folder. AI model definitions remain in `Other\Customizations.xml`, and the agent connection-reference binding is stored in `Assets\botcomponent_connectionreferenceset.xml`.
 
 ## Version history
+
+### 1.0.0.5
+
+- Added visible **Created by Lou Rainaldi** attribution for My Impact Coach in the solution documentation.
+- Updated the agent instructions so questions about who created, built, made, or maintains the agent are answered with **Lou Rainaldi**.
+- Kept creator attribution out of ordinary agent responses unless the user asks.
+- The Dataverse agent `createdby` field remains immutable and continues to display **MOD Administrator**; no tenant user or ownership metadata was changed.
+- Copilot Studio does not expose a separate solution-aware description component for this agent, so no unsupported description metadata was added.
 
 ### 1.0.0.4
 
