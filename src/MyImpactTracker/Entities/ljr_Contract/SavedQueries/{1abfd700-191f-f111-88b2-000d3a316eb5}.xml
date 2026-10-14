@@ -32,7 +32,7 @@
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active GRM" languagecode="1033" />
+      <LocalizedName description="Active Contracts" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>
