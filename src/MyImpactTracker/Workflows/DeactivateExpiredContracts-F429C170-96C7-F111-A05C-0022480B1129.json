@@ -1,0 +1,98 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr6a3_myimpactcoach_bcSUL1.cr.shared_commondataserviceforapps.25f3972c05cf4690b0550d76b4ad1a14"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "Daily_recurrence": {
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 1,
+            "schedule": {
+              "hours": [
+                "2"
+              ],
+              "minutes": [
+                0
+              ]
+            },
+            "timeZone": "UTC"
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "List_expired_active_contracts": {
+          "runAfter": {},
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords"
+            },
+            "parameters": {
+              "entityName": "ljr_contracts",
+              "$select": "ljr_contractid,ljr_enddate",
+              "$filter": "statecode eq 0 and ljr_enddate ne null and ljr_enddate lt @{formatDateTime(utcNow(),'yyyy-MM-dd')}",
+              "$top": 5000
+            }
+          }
+        },
+        "Apply_to_each_expired_contract": {
+          "foreach": "@outputs('List_expired_active_contracts')?['body/value']",
+          "actions": {
+            "Deactivate_contract": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "UpdateOnlyRecord"
+                },
+                "parameters": {
+                  "entityName": "ljr_contracts",
+                  "recordId": "@items('Apply_to_each_expired_contract')?['ljr_contractid']",
+                  "item": {
+                    "statecode": 1,
+                    "statuscode": 2
+                  }
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "List_expired_active_contracts": [
+              "Succeeded"
+            ]
+          },
+          "type": "Foreach"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}
