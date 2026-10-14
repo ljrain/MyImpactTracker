@@ -46,13 +46,13 @@
                     <row>
                       <cell locklevel="0" id="{9402cee8-23b9-4546-9bcb-8feb65a17dc6}" rowspan="4" colspan="1" auto="false" showlabel="false">
                         <labels>
-                          <label description="New SG control 1770931522300" languagecode="1033" />
+                          <label description="Contracts" languagecode="1033" />
                         </labels>
                         <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
                           <parameters>
                             <RecordsPerPage>4</RecordsPerPage>
                             <AutoExpand>Fixed</AutoExpand>
-                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableQuickFind>true</EnableQuickFind>
                             <EnableViewPicker>false</EnableViewPicker>
                             <EnableChartPicker>true</EnableChartPicker>
                             <ChartGridMode>All</ChartGridMode>
@@ -71,14 +71,14 @@
                 </section>
                 <section name="null_section_5" id="4c30e314-0f28-4877-b96c-3bc8ac0e1e39" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                   <labels>
-                    <label description="Work Statemetns" languagecode="1033" />
+                    <label description="Impacts" languagecode="1033" />
                   </labels>
                   <rows>
                     <row />
                     <row>
                       <cell locklevel="0" id="{47f8a217-71eb-4d09-8275-51acf09e4559}" rowspan="4" colspan="1" auto="false" showlabel="false">
                         <labels>
-                          <label description="New SG control 1770933754762" languagecode="1033" />
+                          <label description="Impacts" languagecode="1033" />
                         </labels>
                         <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
                           <parameters>

@@ -10,7 +10,7 @@
         <LocalizedCollectionName description="Customers" languagecode="1033" />
       </LocalizedCollectionNames>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="Customers whose contracts and business impacts are tracked in My Impact Tracker." languagecode="1033" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -821,7 +821,7 @@
       <IsBPFEntity>0</IsBPFEntity>
       <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
       <EntityMask>ActivityPointer</EntityMask>
-      <IsAuditEnabled>0</IsAuditEnabled>
+      <IsAuditEnabled>1</IsAuditEnabled>
       <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
       <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
       <IsActivity>0</IsActivity>
