@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ac8a3ced-8096-4018-b15c-6de6ecd41bbd}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{2ec59d6e-6c97-4e6e-a73c-d917db797e72}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{843d5dff-b17c-4c0e-b046-94abe7856efe}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9d1c162c-3992-4a0a-8420-9697f2f6e7b9}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ljr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bcd1389-3c7c-4764-9ad1-8e72ae2fb1b6}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9454415c-ebd7-4b3b-8a0c-9ae54374b907}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Impact Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_impactdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ljr_impactdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41437e02-10b9-49dc-883b-e250d8fbfbb5}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ljr_customer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b53e43e1-c9e1-4ec9-8b03-2379ad8ca0aa}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Work Statement" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_workstatement" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_workstatement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ef6008d0-0dde-4249-96e0-7cb9561c5893}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Change Realized" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_changerealized" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_changerealized" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4da1960-77bf-4876-8125-b02d70ac30c0}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Enables Next" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_enablesnext" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_enablesnext" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5a8d7b76-783e-46d0-87c6-0d8624d290d8}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Evidence" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_evidence" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_evidence" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f6269da6-5649-467b-8a3d-f9afdded537c}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Impact Statement" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_impactstatement" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_impactstatement" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

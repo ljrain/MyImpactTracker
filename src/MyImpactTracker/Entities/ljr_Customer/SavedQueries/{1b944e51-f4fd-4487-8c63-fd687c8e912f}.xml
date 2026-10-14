@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1b944e51-f4fd-4487-8c63-fd687c8e912f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="ljr_name" select="1" icon="1" preview="1">
+        <row name="result" id="ljr_customerid">
+          <cell name="ljr_name" width="300" />
+          <cell name="ljr_csam" width="283" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ljr_customer">
+          <attribute name="ljr_customerid" />
+          <attribute name="ljr_name" />
+          <order attribute="ljr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="ljr_csam" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Customers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

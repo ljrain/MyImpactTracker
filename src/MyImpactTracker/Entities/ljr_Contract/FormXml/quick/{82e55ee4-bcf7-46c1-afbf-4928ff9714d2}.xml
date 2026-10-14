@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{82e55ee4-bcf7-46c1-afbf-4928ff9714d2}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{5b395231-d3ad-4917-85fc-cbc39fbe61dc}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{22393fe6-2432-4b52-9614-41804723a07f}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c57c00a3-874f-4971-9a61-eb6694ccb7f7}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ljr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{008db5d7-ec61-494d-9f4b-e932ba89a971}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6384135a-6067-4dcd-9042-3a43abccd9e5}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="CSAM" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_csam" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ljr_csam" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cf97faf3-e9b7-4187-b5c7-c04fa23f15fd}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ljr_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ad08f72-3d25-4e3e-8ea6-0ea13cc01804}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ljr_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{83becee9-953f-4cfc-8821-d33f50c17f91}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Package Number" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_packagenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_packagenumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ca6475f-4e6c-4837-b255-5cc083e3513b}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Customer Success Plan Link" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_customersuccessplanlink" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="ljr_customersuccessplanlink" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05a6e226-4e31-4986-85cd-8d49ae2c5975}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Contract Hours" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_contracthours" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="ljr_contracthours" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

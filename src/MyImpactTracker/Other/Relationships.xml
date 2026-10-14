@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_ljr_contract" />
+  <EntityRelationship Name="business_unit_ljr_customer" />
+  <EntityRelationship Name="business_unit_ljr_impact" />
+  <EntityRelationship Name="ljr_contract_CSAM_aaduser" />
+  <EntityRelationship Name="ljr_contract_Customer_ljr_customer" />
+  <EntityRelationship Name="ljr_customer_CSAM_aaduser" />
+  <EntityRelationship Name="ljr_impact_Customer_ljr_customer" />
+  <EntityRelationship Name="ljr_impact_GRM_ljr_contract" />
+  <EntityRelationship Name="lk_ljr_contract_createdby" />
+  <EntityRelationship Name="lk_ljr_contract_modifiedby" />
+  <EntityRelationship Name="lk_ljr_customer_createdby" />
+  <EntityRelationship Name="lk_ljr_customer_modifiedby" />
+  <EntityRelationship Name="lk_ljr_impact_createdby" />
+  <EntityRelationship Name="lk_ljr_impact_modifiedby" />
+  <EntityRelationship Name="owner_ljr_contract" />
+  <EntityRelationship Name="owner_ljr_customer" />
+  <EntityRelationship Name="owner_ljr_impact" />
+  <EntityRelationship Name="team_ljr_contract" />
+  <EntityRelationship Name="team_ljr_customer" />
+  <EntityRelationship Name="team_ljr_impact" />
+  <EntityRelationship Name="user_ljr_contract" />
+  <EntityRelationship Name="user_ljr_customer" />
+  <EntityRelationship Name="user_ljr_impact" />
+</EntityRelationships>

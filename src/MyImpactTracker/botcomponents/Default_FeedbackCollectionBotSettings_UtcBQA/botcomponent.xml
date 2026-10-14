@@ -1,0 +1,9 @@
+<botcomponent schemaname="Default_FeedbackCollectionBotSettings_UtcBQA">
+  <componenttype>18</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <parentbotid>
+    <schemaname>cr6a3_myimpactcoach_bcSUL1</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

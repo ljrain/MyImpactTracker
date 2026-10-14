@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0b2c657d-129c-4857-97b7-7230a2bab350}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="ljr_name" select="1" icon="1" preview="1">
+        <row name="result" id="ljr_impactid">
+          <cell name="ljr_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="ljr_impactdate" width="109" />
+          <cell name="ljr_customer" width="100" />
+          <cell name="ljr_workstatement" width="131" />
+          <cell name="ljr_changerealized" width="136" />
+          <cell name="ljr_enablesnext" width="116" />
+          <cell name="ljr_evidence" width="100" />
+          <cell name="ljr_impactstatement" width="139" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ljr_impact">
+          <attribute name="ljr_impactid" />
+          <attribute name="ljr_name" />
+          <attribute name="createdon" />
+          <order attribute="ljr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="ljr_impactdate" />
+          <attribute name="ljr_customer" />
+          <attribute name="ljr_workstatement" />
+          <attribute name="ljr_changerealized" />
+          <attribute name="ljr_enablesnext" />
+          <attribute name="ljr_evidence" />
+          <attribute name="ljr_impactstatement" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Impacts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f2446ba4-5908-f111-8407-000d3a316eb5}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{5fada7cf-d691-4f85-a310-c9c2a6cdccfb}" showlabel="false" name="New Tab" labelid="{b356541f-e071-421c-b7eb-97d094ff57a6}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="false" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{36556d6b-41e7-4282-8219-941d5b9c396a}" name="tab_1_column_1_section_1" labelid="{76a074c6-65a0-4968-90f9-a61fe4ec72a8}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{95cfd531-96b8-434b-91ba-3581ca863c70}" labelid="{60993e5a-a1c7-4bf2-bfbe-8b547b4681e3}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d478e66-8a68-4488-b991-9b4604b949f3}" labelid="{07cf15fd-b66e-468f-b125-944c54a0a271}">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_customer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_customer" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a83ea36-027f-4a54-aec7-3422ab99759b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Primary EDE Contract" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_primaryedecontract" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="ljr_primaryedecontract" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b71bf38e-c7c6-4cef-8b00-6375f2f73dbf}" labelid="{ac788011-aa52-48b2-b713-2597b5f121ef}">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_startdate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_startdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12cb4073-4a85-4fc1-be80-41634ad20753}" labelid="{3687b55f-43a9-4c6d-bb22-5813a1451737}">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_enddate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_enddate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8c45d21-5d5c-41c5-8444-d1e4722b4298}" locklevel="0" colspan="1" rowspan="1" labelid="{2367fffd-e786-4950-9db7-bae2b7bd8c5b}">
+                        <labels>
+                          <label description="CSAM" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_csam" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ljr_csam" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d8acd455-734e-4acd-855e-9467938250d8}" locklevel="0" colspan="1" rowspan="1" labelid="{5db6d932-410f-427c-a41b-506cf2b39f9d}">
+                        <labels>
+                          <label description="Customer Success Plan Link" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_customersuccessplanlink" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="ljr_customersuccessplanlink" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{336307b8-c22a-430b-9c42-6dc7f632d495}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{65e03ccc-555b-47e1-a105-1f70774b2360}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ef8d6fc-48d0-4e90-9292-13d14f542945}" labelid="{706fafd8-ddc4-4e17-aa67-f6243a7cb81a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26b2d840-7950-4889-9846-de8c0f42e34f}" locklevel="0" colspan="1" rowspan="1" labelid="{3ce59966-b9aa-455c-8e96-5976b3921a1d}">
+                        <labels>
+                          <label description="Package Number" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_packagenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ljr_packagenumber" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{0ec32f52-8454-4bb0-8134-b6fa190241d1}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{2998bf6d-60ff-46c7-bd51-5819e430a5e2}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{332d4bd9-cf0e-4448-81ac-57d07fe35d8a}" labelid="{c49eb1be-2304-4bb9-8e05-d6e02a6395d5}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Contract" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{39d4ac2c-7fc3-406f-aa67-54f45652a67c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="ljr_name" select="1" icon="1" preview="1">
+        <row name="result" id="ljr_contractid">
+          <cell name="ljr_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="ljr_csam" width="100" />
+          <cell name="ljr_startdate" width="100" />
+          <cell name="ljr_enddate" width="100" />
+          <cell name="ljr_packagenumber" width="137" />
+          <cell name="ljr_customersuccessplanlink" width="201" />
+          <cell name="ljr_contracthours" width="126" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ljr_contract">
+          <attribute name="ljr_contractid" />
+          <attribute name="ljr_name" />
+          <attribute name="createdon" />
+          <order attribute="ljr_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="ljr_csam" />
+          <attribute name="ljr_startdate" />
+          <attribute name="ljr_enddate" />
+          <attribute name="ljr_packagenumber" />
+          <attribute name="ljr_customersuccessplanlink" />
+          <attribute name="ljr_contracthours" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Contracts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

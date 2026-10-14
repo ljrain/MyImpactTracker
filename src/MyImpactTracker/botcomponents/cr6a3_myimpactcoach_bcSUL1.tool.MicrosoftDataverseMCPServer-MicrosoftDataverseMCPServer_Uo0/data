@@ -1,0 +1,5 @@
+kind: McpTool
+authMode: Invoker
+connectionReference: cr6a3_myimpactcoach_bcSUL1.cr.shared_commondataserviceforapps.25f3972c05cf4690b0550d76b4ad1a14
+connectorId: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps
+operationId: InvokeMCP

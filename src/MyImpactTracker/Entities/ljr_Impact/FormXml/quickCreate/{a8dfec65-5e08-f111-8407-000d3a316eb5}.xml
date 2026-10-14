@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a8dfec65-5e08-f111-8407-000d3a316eb5}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{5f241b77-a442-4bba-8647-933af68a8bdf}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{6dd83e94-7cf9-4a1f-9f68-a6619255beab}">
+                  <labels>
+                    <label description="Customer" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="542FBFBE-0E4C-496C-8012-555DE6581923" labelid="{2e1dcfd4-34db-4ac3-b864-1c4125b709c2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd41ba25-55c8-469a-b32c-29d4d815df9d}" locklevel="0" colspan="1" rowspan="1" labelid="{7f410463-7fd7-4ee2-9ed5-bfadf901f70f}">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ljr_customer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{321f2c9c-8ac3-4047-bedb-3b14a18bfe73}" locklevel="0" colspan="1" rowspan="1" labelid="{85fc7f54-3021-4d1e-a2ff-5cdbc0a1aa55}">
+                        <labels>
+                          <label description="Impact Date" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_impactdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ljr_impactdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{057da61c-7b8e-46e3-82d6-a8328d3514a7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="GRM" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_grm" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ljr_grm" disabled="false">
+                          <parameters>
+                            <DefaultViewId>{1ABFD700-191F-F111-88B2-000D3A316EB5}</DefaultViewId>
+                            <AvailableViewIds>{AD8CC1B1-F1BA-40E7-96E6-5B10F0C2B02F},{1ABFD700-191F-F111-88B2-000D3A316EB5},{7DC4AFE5-C0CB-46A8-97FD-53A3D9A85C3A},{39D4AC2C-7FC3-406F-AA67-54F45652A67C}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7c719368-a202-415b-a84c-c2a14e03b6ca}" locklevel="0" colspan="1" rowspan="5" labelid="{31b6f2b7-a16e-4f70-a6d0-4a8e47f15579}">
+                        <labels>
+                          <label description="Work Statement" languagecode="1033" />
+                        </labels>
+                        <control id="ljr_workstatement" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="ljr_workstatement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{7843f102-0f65-4d78-b86f-cc90c2c0cef7}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{80c624cb-4216-48f1-9cd9-37fb34e4ea5d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{210adad5-bafa-411c-b12e-538b73832331}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{36c29935-42c9-4db2-895a-cc5ab15d9a0d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Work Statement" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

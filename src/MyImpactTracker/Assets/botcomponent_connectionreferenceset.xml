@@ -1,0 +1,5 @@
+<botcomponent_connectionreferenceset>
+  <botcomponent_connectionreference botcomponentid.schemaname="cr6a3_myimpactcoach_bcSUL1.tool.MicrosoftDataverseMCPServer-MicrosoftDataverseMCPServer_Uo0" connectionreferenceid.connectionreferencelogicalname="cr6a3_myimpactcoach_bcSUL1.cr.shared_commondataserviceforapps.25f3972c05cf4690b0550d76b4ad1a14">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+</botcomponent_connectionreferenceset>
