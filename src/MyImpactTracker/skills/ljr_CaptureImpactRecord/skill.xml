@@ -1,0 +1,50 @@
+<skill uniquename="ljr_CaptureImpactRecord">
+  <body># Capture an Impact record
+
+Use this skill when a user asks to create, add, log, save, or capture an Impact in My Impact Tracker.
+
+## Required input
+- Customer name
+- Contract name, except when the Customer is INTERNAL
+- Impact Work Type
+- Short factual notes
+
+Ask for all missing required inputs in one message.
+
+## Procedure
+1. Resolve the Customer with one `read_query` call against `ljr_customer`. Select only `ljr_customerid` and `ljr_name`. Match the supplied name as narrowly as possible. If more than one credible match remains, ask the user to choose.
+2. Unless the Customer is INTERNAL, resolve the Contract with one `read_query` call against `ljr_contract`. Select only `ljr_contractid`, `ljr_name`, and its Customer lookup. Require the Contract to belong to the resolved Customer. If more than one credible match remains, ask the user to choose.
+3. Draft the record from the user's notes without calling another model, prompt, or skill:
+   - `ljr_name`: short descriptive title, at most 30 characters.
+   - `ljr_workstatement`: lightly cleaned user notes without changing meaning.
+   - `ljr_changerealized`: 2-3 factual sentences describing the supported change or outcome.
+   - `ljr_impactstatement`: one concise leadership-ready sentence.
+   - `ljr_evidence`: explicit proof only; omit when none was supplied.
+   - `ljr_enablesnext`: an explicitly supported next capability only; omit when none was supplied.
+   - `ljr_impactdate`: user-supplied date, otherwise today's date.
+4. Show one compact preview of every value that will be written and ask for explicit confirmation.
+5. After confirmation, call `create_record` exactly once. Set `entityLogicalName` to `ljr_impact`. Put scalar values in the `fields` map. Put related-record values in the separate `lookups` map as `{ "ljr_customer": "&lt;customer-guid&gt;", "ljr_grm": "&lt;contract-guid&gt;" }`; omit `ljr_grm` only for INTERNAL. Do not place lookup GUIDs in `fields`.
+6. Report success only when `create_record` returns a record GUID. Include that GUID in the response. If the tool returns an error, show the exact error and do not claim the Impact was saved.
+
+## Choice values
+- `ljr_worktype`: Customer Delivery `854120000`; Customer Advisory `854120001`; Internal Work `854120002`; Preparation `854120003`; Admin `854120004`; Learning `854120005`.
+- `ljr_sourcetype`: Agent `854120000`.
+- `statuscode`: Draft `1`.
+
+## Write payload requirements
+In `fields`, always provide `ljr_name`, `ljr_worktype`, `ljr_sourcetype`, `ljr_workstatement`, `ljr_changerealized`, `ljr_impactstatement`, `ljr_impactdate`, and `statuscode`. In `lookups`, always provide `ljr_customer`; provide `ljr_grm` unless the Customer is INTERNAL. Omit `ljr_evidence` and `ljr_enablesnext` when unsupported rather than sending invented or placeholder text.
+
+## Safety and performance
+- Do not retrieve table schema when following this skill.
+- Do not use broad search, list unrelated records, or repeat a lookup that already succeeded.
+- Never invent metrics, evidence, approvals, adoption, business value, or future work.
+- Never create more than one record per confirmation.
+- Never update Customer or Contract records.</body>
+  <description>Creates one Draft Impact from a customer, contract, work type, and factual notes. Use for create, add, log, save, or capture Impact requests.</description>
+  <iscustomizable>1</iscustomizable>
+  <ishidden>0</ishidden>
+  <ispersonal>0</ispersonal>
+  <name>Capture Impact Record</name>
+  <origin>0</origin>
+  <version>1.0.0.4</version>
+</skill>
