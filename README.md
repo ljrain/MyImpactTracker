@@ -6,11 +6,11 @@ The solution includes:
 
 - A model-driven app for Customers, Contracts, and Impacts.
 - **My Impact Coach**, a Copilot Studio agent that can create, review, search, and summarize Impact records.
-- A fast Impact-capture skill that creates a complete draft from Customer, Contract, Impact Work Type, and short notes.
+- A native **Capture Impact Record** business skill and fast agent path that create a complete draft from Customer, Contract, Impact Work Type, and short notes.
 - AI Builder prompts for work-statement extraction and 1:1 summary generation.
 - A daily cloud flow that deactivates Contracts after their End Date.
 
-The checked-in snapshot is the unmanaged `MyImpactTracker` solution, version `1.0.0.3`, exported from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
+The checked-in snapshot is the unmanaged `MyImpactTracker` solution, version `1.0.0.4`, exported from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
 
 ## How to use the solution
 
@@ -58,7 +58,7 @@ Ask the agent to create, add, log, or capture an Impact. The fast-capture skill:
 2. Resolves only the required Customer and Contract records.
 3. Drafts all Impact fields directly without invoking another agent or prompt.
 4. Shows one compact preview and asks once for confirmation.
-5. Creates the Impact with a single Dataverse write.
+5. Creates the Impact with a single Dataverse write, sending scalar values in `fields` and Customer/Contract GUIDs in the separate `lookups` map.
 
 The agent uses only supplied facts. It does not invent metrics, evidence, business value, approvals, or future work. Missing evidence or outcome details are flagged in the preview without blocking creation.
 
@@ -83,6 +83,7 @@ My Impact Coach can also:
   - `Workflows/` - cloud flow definitions
   - `WebResources/` - solution web resources
   - `bots/` and `botcomponents/` - My Impact Coach configuration and tools
+  - `skills/` - native Dataverse business skills used by the agent
   - `aiskillconfigs/` - AI skill configuration records
   - `Assets/` - agent connection-reference bindings
   - `Other/` - solution manifest, relationships, AI models, and remaining customizations
@@ -137,6 +138,7 @@ The unpacked solution includes:
 - Model-driven app and site map: `ljr_MyImpactTracker`
 - Dataverse tables: `ljr_Customer`, `ljr_Contract`, and `ljr_Impact`
 - My Impact Coach and its Microsoft Dataverse MCP Server tool
+- Native `Capture Impact Record` business skill
 - Daily `Deactivate Expired Contracts` cloud flow
 - Global choices: `ljr_impactsourcetype` and `ljr_impactworktype`
 - AI models: `Work Statement Extractor` and `Create 1:1 Impactful Summary Agenda`
@@ -145,6 +147,13 @@ The unpacked solution includes:
 PAC does not split every modern component into a dedicated folder. AI model definitions remain in `Other\Customizations.xml`, and the agent connection-reference binding is stored in `Assets\botcomponent_connectionreferenceset.xml`.
 
 ## Version history
+
+### 1.0.0.4
+
+- Added the native **Capture Impact Record** Dataverse business skill to the solution and source.
+- Corrected the agent's `create_record` contract so scalar values are sent in `fields`.
+- Moved the `ljr_customer` and `ljr_grm` GUIDs to the separate `lookups` map and explicitly prohibited sending lookup GUIDs in `fields`.
+- Preserved the fast path of one preview, one confirmation, and one create operation with exact Dataverse error reporting.
 
 ### 1.0.0.3
 
