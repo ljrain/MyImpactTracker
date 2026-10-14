@@ -8,6 +8,7 @@ Unpacked source for the unmanaged **My Impact Tracker** Power Platform solution.
   - `AppModules/` and `AppModuleSiteMaps/` - model-driven app and site map
   - `Entities/` - Dataverse tables, forms, views, and ribbons
   - `OptionSets/` - global choices
+  - `Workflows/` - cloud flow definitions
   - `WebResources/` - solution web resources
   - `bots/` and `botcomponents/` - My Impact Coach agent source
   - `aiskillconfigs/` - AI skill configuration records
@@ -15,7 +16,7 @@ Unpacked source for the unmanaged **My Impact Tracker** Power Platform solution.
   - `Other/` - solution manifest, relationships, AI models, and remaining customizations
 - `artifacts/` - ignored local output for exported and packed ZIP files
 
-The checked-in snapshot is solution `MyImpactTracker`, version `1.0.0.1`, exported unmanaged from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
+The checked-in snapshot is solution `MyImpactTracker`, version `1.0.0.2`, exported unmanaged from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
 
 ## Prerequisites and authentication
 
@@ -67,6 +68,7 @@ The unpacked solution includes:
 
 - Model-driven app and site map: `ljr_MyImpactTracker`
 - Dataverse tables: `ljr_Customer`, `ljr_Contract`, and `ljr_Impact`
+- Daily `Deactivate Expired Contracts` cloud flow, which deactivates active contracts after their End Date
 - My Impact Coach agent, its Dataverse MCP tool component, and feedback settings
 - Global choices: `ljr_impactsourcetype` and `ljr_impactworktype`
 - Agent Dataverse connection-reference binding
