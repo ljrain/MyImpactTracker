@@ -15,7 +15,7 @@ Unpacked source for the unmanaged **My Impact Tracker** Power Platform solution.
   - `Other/` - solution manifest, relationships, AI models, and remaining customizations
 - `artifacts/` - ignored local output for exported and packed ZIP files
 
-The checked-in snapshot is solution `MyImpactTracker`, version `1.0.0.0`, exported unmanaged from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
+The checked-in snapshot is solution `MyImpactTracker`, version `1.0.0.1`, exported unmanaged from the `lou-dev-gold` development environment (`8b8315e8-7fd9-e639-a66c-d6b32a63c216`).
 
 ## Prerequisites and authentication
 
